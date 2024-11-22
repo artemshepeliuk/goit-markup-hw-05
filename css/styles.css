@@ -559,8 +559,7 @@ svg use {
 }
 
 .modal-btn:hover,
-.modal-btn:focus
- {
+.modal-btn:focus {
     background-color: var(--color-pressed);
     border: none;
 }
@@ -582,17 +581,11 @@ svg use {
     letter-spacing: 0.02em;
     color: var(--color-dark);
     margin-bottom: 16px;
-
 }
 
 .modal-form-wrapper {
     display: flex;
     flex-direction: column;
-    margin-bottom: 8px;
-}
-
-.modal-form-wrapper:last-child {
-    margin-bottom: 16px;
 }
 
 .modal-form-label {
@@ -631,7 +624,7 @@ svg use {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-input:focus .icon-position use {
+.modal-form-input:focus .icon-position {
     fill: var(--color-primary);
 }
 
@@ -651,6 +644,10 @@ svg use {
     outline: transparent;
     resize: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-comment:focus {
+    border-color: var(--color-primary);
 }
 
 .modal-form-checkbox {
@@ -688,6 +685,9 @@ svg use {
 }
 
 .modal-send-btn {
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
     min-width: 169px;
     height: 56px;
     font-family: "Roboto", sans-serif;

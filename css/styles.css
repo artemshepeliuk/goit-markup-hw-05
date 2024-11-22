@@ -624,7 +624,7 @@ svg use {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-input:focus .icon-position {
+.modal-form-input:focus .icon-position .icon-color {
     fill: var(--color-primary);
 }
 
@@ -659,7 +659,8 @@ svg use {
     border: none;
 }
 
-.modal-form-checkbox-input:checked + .modal-form-privacy-text .checkmark-icon use {
+.modal-form-checkbox-input:checked + .modal-form-privacy-text .checkmark-icon,
+.modal-form-checkbox-input:checked+.modal-form-privacy-text .checkmark-icon use {
     fill: var(--color-light);
 }
 

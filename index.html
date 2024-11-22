@@ -57,7 +57,7 @@
       <section class="hero">
         <div class="hero-container container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="btn" type="button">Order Service</button>
+          <button class="hero-btn" type="button">Order Service</button>
         </div>
       </section>
 
@@ -514,13 +514,32 @@
         </div>
 
         <!-- subscribe form -->
-        <div></div>
+        <div class="subscribe">
+          <p class="description margin-bottom-medium">Subscribe</p>
+          <form class="subscribe-form" action="">
+            <label>
+              <input
+                class="subscribe-input"
+                type="email"
+                name="subscribe"
+                placeholder="E-mail"
+                autocomplete="off"
+                required
+              />
+            </label>
+            <button type="button" class="subscribe-btn">
+              Subscribe
+              <svg class="telegram-icon" width="24" height="24">
+                <use fill="white" href="./images/icons.svg#icon-telegram"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
     <div class="backdrop">
       <form class="modal" action="">
-        <span class="close-btn">&times;</span>
         <h3 class="subtitle">Leave your contacts and we will call you back</h3>
         <label class="label">
           Name

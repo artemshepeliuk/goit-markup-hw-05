@@ -277,11 +277,11 @@ ul {
     margin-bottom: 48px;
 }
 
-.hero .btn {
+.hero-btn {
     display: block;
     min-width: 169px;
     height: 56px;
-    background-color: #4d5ae5;
+    background-color: var(--color-primary);
     color: var(--color-white);
     cursor: pointer;
     font-family: "Roboto", sans-serif;
@@ -296,8 +296,8 @@ ul {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero .btn:hover,
-.hero .btn:focus {
+.hero-btn:hover,
+.hero-btn:focus {
     background-color: var(--color-pressed);
 }
 
@@ -439,9 +439,12 @@ svg use {
     margin-right: 120px;
 }
 
-.social-media .description {
+.footer .description {
     font-weight: 500;
     color: var(--color-white);
+}
+.social-media {
+    margin-right: 80px;
 }
 
 .social-links-footer {
@@ -453,6 +456,54 @@ svg use {
     background-color: var(--color-success);
 }
 
+.subscribe-form {
+    display: flex;
+    gap: 24px;
+}
+
+.subscribe-input {
+    width: 264px;
+    height: 40px;
+    border: 1px solid var(--color-white);
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: var(--color-white);
+}
+
+.subscribe-input::placeholder {
+    color: var(--color-white);
+}
+
+.subscribe-btn {
+    min-width: 165px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--color-white);
+    cursor: pointer;
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 4px;
+}
+
+.telegram-icon {
+    margin-left: 16px;
+}
+
+
+
+
 .light {
     color: var(--color-light);
 }
@@ -463,47 +514,6 @@ svg use {
 }
 
 /* #endregion */
-
-.modal {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    background: green;
-    width: 408px;
-}
-
-.close-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    right: 0;
-    border-radius: 50%;
-    color: var(--color-dark);
-    background-color: #e7e9fc;
-    width: 24px;
-    height: 24px;
-    stroke-width: 1px;
-    stroke: rgba(0, 0, 0, 0.1);
-    margin: 24px;
-    border: 1px solid #8e8f99;
-}
-
-.label {
-    display: flex;
-    flex-direction: column;
-    color: #8e8f99;
-}
-
-.input {
-    position: relative;
-    background-repeat: no-repeat;
-    background-position: 19px;
-    background-size: 16px 16px;
-    border: 1px solid rgba(46, 47, 66, 0.4);
-    border-radius: 4px;
-    padding: 14px 0;
-}
 
 .user-icon {
     background-image: url('data:image/svg+xml,%3Csvg%20width%3D%2212%22%20height%3D%2212%22%20viewBox%3D%220%200%2012%2012%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M6%206C7.6575%206%209%204.6575%209%203C9%201.3425%207.6575%200%206%200C4.3425%200%203%201.3425%203%203C3%204.6575%204.3425%206%206%206ZM6%207.5C3.9975%207.5%200%208.505%200%2010.5V11.25C0%2011.6625%200.3375%2012%200.75%2012H11.25C11.6625%2012%2012%2011.6625%2012%2011.25V10.5C12%208.505%208.0025%207.5%206%207.5Z%22%20fill%3D%22%232E2F42%22%20%2F%3E%3C%2Fsvg%3E');

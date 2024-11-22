@@ -661,6 +661,10 @@ svg use {
 
 }
 
+.modal-form-checkbox-input:checked + .modal-form-privacy-text .checkmark-icon {
+    fill: var(--checkbox-checked-fill);
+}
+
 .modal-form-privacy-text {
     font-size: 12px;
     line-height: 1.17;

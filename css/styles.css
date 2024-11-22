@@ -657,12 +657,10 @@ svg use {
 .modal-form-checkbox-input:checked + .modal-form-privacy-text .checkmark {
     background-color: var(--color-pressed);
     border: none;
-    fill: var(--color-light);
-
 }
 
-.modal-form-checkbox-input:checked + .modal-form-privacy-text .checkmark-icon {
-    fill: var(--checkbox-checked-fill);
+.modal-form-checkbox-input:checked + .modal-form-privacy-text .checkmark-icon use {
+    fill: var(--color-light);
 }
 
 .modal-form-privacy-text {

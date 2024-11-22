@@ -517,5 +517,59 @@
         <div></div>
       </div>
     </footer>
+
+    <div class="backdrop">
+      <form class="modal" action="">
+        <span class="close-btn">&times;</span>
+        <h3 class="subtitle">Leave your contacts and we will call you back</h3>
+        <label class="label">
+          Name
+          <input
+            class="input user-icon"
+            type="text"
+            name="name"
+            autocomplete="off"
+            required
+          />
+        </label>
+
+        <label class="label">
+          Phone
+          <input
+            class="input tel-icon"
+            type="tel"
+            name="phone"
+            autocomplete="off"
+            required
+          />
+        </label>
+
+        <label class="label">
+          Email
+          <input
+            class="input mail-icon"
+            type="email"
+            name="email"
+            autocomplete="off"
+            required
+          />
+        </label>
+
+        <label class="label">
+          Comment
+          <textarea
+            name="comment"
+            rows="5"
+            placeholder="Text input"
+            autocomplete="off"
+          ></textarea>
+        </label>
+
+        <label class="label">
+          <input type="checkbox" name="policy" autocomplete="off" required />
+          I accept the terms and conditions of the Privacy Policy
+        </label>
+      </form>
+    </div>
   </body>
 </html>

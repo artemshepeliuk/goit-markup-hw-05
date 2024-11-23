@@ -654,13 +654,10 @@ svg use {
     margin-bottom: 24px;
 }
 
-.modal-form-checkbox-input:checked + .modal-form-privacy-text .checkmark {
+.modal-form-checkbox-input:checked + .modal-form-privacy-text .checkmark,
+.modal-form-checkbox-input:checked+.modal-form-privacy-text .checkmark use {
     background-color: var(--color-pressed);
     border: none;
-}
-
-.modal-form-checkbox-input:checked + .modal-form-privacy-text .checkmark-icon,
-.modal-form-checkbox-input:checked+.modal-form-privacy-text .checkmark-icon use {
     fill: var(--color-light);
 }
 

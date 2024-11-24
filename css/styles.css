@@ -297,8 +297,8 @@ ul {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
+.btn:hover,
+.btn:focus {
     background-color: var(--color-pressed);
 }
 
@@ -480,6 +480,24 @@ svg use {
     color: var(--color-white);
 }
 
+/* .modal-send-btn {
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    min-width: 169px;
+    height: 56px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+} */
+
 .subscribe-btn {
     min-width: 165px;
     height: 40px;
@@ -525,6 +543,16 @@ svg use {
     height: 100%;
     background-color: rgba(46, 47, 66, 0.4);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.backdrop.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
 }
 
 .modal {
@@ -560,6 +588,7 @@ svg use {
 
 .modal-btn:hover,
 .modal-btn:focus {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: var(--color-pressed);
     border: none;
 }
@@ -666,6 +695,8 @@ svg use {
 }
 
 .checkbox-label {
+    display: flex;
+    align-items: center;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
@@ -682,6 +713,7 @@ svg use {
     align-items: center;
     justify-content: center;
     fill: transparent;
+    margin-right: 8px;
 }
 
 .privacy-policy-link {
@@ -689,14 +721,23 @@ svg use {
     text-decoration: none;
 }
 
-.checkbox:checked + .checkbox-label .icon-container {
+.checkbox:checked + .checkbox-label > .icon-container {
     background-color: var(--color-pressed);
     border: none;
+}
+
+.checkbox:checked+.checkbox-label>.icon-container .checkmark-icon {
     fill: var(--color-light);
 }
 
 
+.checkbox-icon {
+    display: none;
+}
 
+.checkbox:checked+.checkbox-label > .icon-container .checkbox-icon  {
+    display: block;
+}
 
 
 

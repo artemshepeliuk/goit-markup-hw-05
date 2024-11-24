@@ -724,6 +724,7 @@ svg use {
 .checkbox:checked + .checkbox-label > .icon-container {
     background-color: var(--color-pressed);
     border: none;
+    fill: var(--color-light);
 }
 
 .checkbox:checked+.checkbox-label>.icon-container .checkmark-icon {

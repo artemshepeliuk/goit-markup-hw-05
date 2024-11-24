@@ -687,6 +687,7 @@ svg use {
 
 
 .form-checkbox-container {
+    display: flex;
     margin-bottom: 24px;
 }
 
@@ -695,23 +696,21 @@ svg use {
 }
 
 .checkbox-label {
-    display: flex;
-    align-items: center;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    color: var(--color-subtle);
+    color: var(--color-subtle); 
 }
 
-.icon-container {
+.checkbox-icon-container {
     display: inline-flex;
+    align-items: center;
+    justify-content: center;
     width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    align-items: center;
-    justify-content: center;
     fill: transparent;
     margin-right: 8px;
 }
@@ -721,13 +720,13 @@ svg use {
     text-decoration: none;
 }
 
-.checkbox:checked + .checkbox-label > .icon-container {
+.checkbox:checked + .checkbox-label > .checkbox-icon-container {
     background-color: var(--color-pressed);
     border: none;
     fill: var(--color-light);
 }
 
-.checkbox:checked+.checkbox-label>.icon-container .checkmark-icon {
+.checkbox:checked+.checkbox-label > .checkbox-icon-container .checkmark-icon {
     fill: var(--color-light);
 }
 
@@ -736,7 +735,7 @@ svg use {
     display: none;
 }
 
-.checkbox:checked+.checkbox-label > .icon-container .checkbox-icon  {
+.checkbox:checked+.checkbox-label > .checkbox-icon-container .checkbox-icon  {
     display: block;
 }
 

@@ -650,12 +650,51 @@ svg use {
     border-color: var(--color-primary);
 }
 
-.modal-form-checkbox {
+
+
+
+
+.visually-hidden:checked + .privacy-text > .overlay-span {
+    background-color: var(--color-pressed);
+    border: none;
+    fill: var(--color-light);
+}
+
+.form-field {
     margin-bottom: 24px;
 }
 
-.visually-hidden:checked + .modal-form-privacy-text > .checkmark,
-.visually-hidden:checked + .modal-form-privacy-text > .checkmark use {
+
+
+.privacy-text {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: var(--color-subtle);
+}
+
+.overlay-span {
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+}
+
+.privacy-link {
+    color: var(--color-primary);
+}
+
+/* .modal-form-checkbox {
+    margin-bottom: 24px;
+}
+
+.visually-hidden:checked + .modal-form-privacy-text > .checkbox,
+.visually-hidden:checked + .modal-form-privacy-text > .checkbox .checkbox-svg {
     background-color: var(--color-pressed);
     border: none;
     fill: var(--color-light);
@@ -668,7 +707,7 @@ svg use {
     color: var(--color-subtle);
 }
 
-.checkmark {
+.checkbox {
     width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -682,7 +721,10 @@ svg use {
 
 .modal-form-agreement-link {
     color: var(--color-primary);
-}
+} */
+
+
+
 
 .modal-send-btn {
     display: block;

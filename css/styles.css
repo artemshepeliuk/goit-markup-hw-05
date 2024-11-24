@@ -654,7 +654,8 @@ svg use {
     margin-bottom: 24px;
 }
 
-.visually-hidden:checked + .modal-form-privacy-text > .checkmark {
+.visually-hidden:checked + .modal-form-privacy-text > .checkmark,
+.visually-hidden:checked + .modal-form-privacy-text > .checkmark use {
     background-color: var(--color-pressed);
     border: none;
     fill: var(--color-light);

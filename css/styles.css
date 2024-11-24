@@ -654,8 +654,7 @@ svg use {
     margin-bottom: 24px;
 }
 
-.modal-form-checkbox-input:checked + .modal-form-privacy-text .checkmark,
-.modal-form-checkbox-input:checked+.modal-form-privacy-text .checkmark use {
+.modal-form-checkbox-input:checked + .modal-form-privacy-text > .checkmark {
     background-color: var(--color-pressed);
     border: none;
     fill: var(--color-light);
